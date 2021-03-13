@@ -1,4 +1,4 @@
-module.exports = function toReadable (number) {
+module.exports = function toReadable (num) {
     num = num.toString();
     let str = '';
     let one = 'one',
