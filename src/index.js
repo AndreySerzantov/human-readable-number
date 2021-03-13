@@ -29,25 +29,28 @@ module.exports = function toReadable (num) {
         eighty = 'eighty',
         ninety = 'ninety';
 
+        if(num == '' || num == 0){
+            str = 'zero';
+        }
         if(num.length == 1){
             if(num == '1'){
                 str += one;
             }else if(num == '2'){
-                str += ' ' + two;
+                str += two;
             }else if(num == '3'){
-                str += ' ' + three;
+                str +=  three;
             }else if(num == '4'){
-                str += ' ' + four;
+                str +=  four;
             }else if(num == '5'){
-                str += ' ' + five;
+                str += five;
             }else if(num == '6'){
-                str += ' ' + six;
+                str += six;
             }else if(num == '7'){
-                str += ' ' + seven;
+                str += seven;
             }else if(num == '8'){
-                str += ' ' + eight;
+                str += eight;
             }else if(num == '9'){
-                str += ' ' + nine;
+                str += nine;
             }
         }
 
